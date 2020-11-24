@@ -62,18 +62,18 @@
         </dl>
         <img class="week-product__product-image" src="https://via.placeholder.com/260x315" alt="Три корзинки разного размера и цвета в женских руках." width="260" height="315">
         <p class="week-product__product-price">Цена: 990 руб.</p>
-        <button class="week-product__product-order button" type="button">Заказать</button>
+        <a class="week-product__product-order button" href="product-order.html">Заказать</a>
       </section>
 
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">Экологически чистые материалы</li>
-          <li class="about-us__item">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item">Увеличивает лайкина фотографиях</li>
-          <li class="about-us__item">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item">Поддержка отечественного производителя</li>
-          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+          <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--money">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--heart">Увеличивает лайкина фотографиях</li>
+          <li class="about-us__item about-us__item--clew">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -84,21 +84,21 @@
             <p class="feedbacks__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="feedbacks__author">
               Анастасия Красильникова
-              <span class="feedbacks__author--email">@misssssiskras</span>
+              <span class="feedbacks__author-email">@misssssiskras</span>
             </cite>
           </blockquote>
           <blockquote class="feedbacks__item slider__item">
             <p class="feedbacks__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="feedbacks__author">
               Екатерина Красильникова
-              <span class="feedbacks__author--email">@misssssiskras2</span>
+              <span class="feedbacks__author-email">@misssssiskras2</span>
             </cite>
           </blockquote>
           <blockquote class="feedbacks__item slider__item">
             <p class="feedbacks__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="feedbacks__author">
               Елена Красильникова
-              <span class="feedbacks__author--email">@misssssiskras3</span>
+              <span class="feedbacks__author-email">@misssssiskras3</span>
             </cite>
           </blockquote>
         </div>
@@ -113,7 +113,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__info">
           <dt>e-mail:</dt>
-          <dd>info@mimimishkashop.ru</dd>
+          <dd><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt>адрес:</dt>
           <dd>г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
         </dl>
@@ -136,6 +136,8 @@
             <a href="" aria-label="Твиттер"></a>
           </li>
         </ul>
+      </div>
+      <div class="copyright">
         <span>Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
@@ -144,15 +146,13 @@
     <section class="add-to-cart">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h3 class="add-to-cart__title">Добавить в корзину</h3>
-        <fieldset>
-          <legend class="add-to-cart__text">Выберите размер:</legend>
-          <input type="radio" name="size" id="size-s" value="s">
-          <label for="size-s">S</label>
-          <input type="radio" name="size" id="size-m" value="m">
-          <label for="size-m">M</label>
-          <input type="radio" name="size" id="size-l" value="l">
-          <label for="size-l">L</label>
-        </fieldset>
+        <span class="add-to-cart__text">Выберите размер:</span>
+        <input type="radio" name="size" id="size-s" value="s" checked>
+        <label for="size-s">S</label>
+        <input type="radio" name="size" id="size-m" value="m">
+        <label for="size-m">M</label>
+        <input type="radio" name="size" id="size-l" value="l">
+        <label for="size-l">L</label>
         <button class="add-to-cart__button button" type="submit">Добавить</button>
       </form>
     </section>
