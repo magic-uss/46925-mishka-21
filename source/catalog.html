@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+  <body class="page__body">
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/86x35" alt="Логотип интернет-магазина «Мишка»." width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-nav">
+          <li class="main-nav__item">
+            <a>Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-nav">
+          <li class="main-nav__item">
+            <a href="">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="product-catalog">
+
+        <h1 class="product-catalog__title">Каталог товаров</h1>
+
+        <ul class="product-catalog__list">
+          <li class="product-catalog__item">
+            <a href="">
+              <img src="https://via.placeholder.com/260x195" alt="Вязаный зайчик в голубом костюме." width="260" height="195">
+              <h3>Зайчик-попрыгайчик</h3>
+              <span>Рост 30 см, вес 200 г</span>
+            </a>
+            <span>1 200 руб.</span>
+          </li>
+          <li class="product-catalog__item">
+            <a href="">
+              <img src="https://via.placeholder.com/260x195" alt="Вязаная корзинка, верхняя половина белая, нижняя половина розовая." width="260" height="195">
+              <h3>Корзинка для белья</h3>
+              <span>Диаметр 15 см, высота 10 см</span>
+            </a>
+            <span>690 руб.</span>
+          </li>
+          <li class="product-catalog__item">
+            <a href="">
+              <img src="https://via.placeholder.com/260x195" alt="Зеленая вязаная корзинка с белой полоской сверху." width="260" height="195">
+              <h3>Большая корзинка для игрушек</h3>
+              <span>Диаметр 30 см, высота 30 см</span>
+            </a>
+            <span>1 500 руб.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video">
+          <img src="https://via.placeholder.com/260x150" alt="Вязаная корзинка, верхняя половина бирюзового цвета, нижняя серого цвета." width="260" height="150">
+          <button class="production__video-button" type="button" aria-label="Смотреть"></button>
+        </div>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__button button" href="">Сделать заказ</a>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="" aria-label="Инстаграм"></a>
+          </li>
+          <li class="socials__item">
+            <a href="" aria-label="Фейсбук"></a>
+          </li>
+          <li class="socials__item">
+            <a href="" aria-label="Твиттер"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+      </div>
+    </footer>
+
+    <section class="add-to-cart">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h3 class="add-to-cart__title">Добавить в корзину</h3>
+        <fieldset>
+          <legend class="add-to-cart__text">Выберите размер:</legend>
+          <input type="radio" name="size" id="size-s" value="s" checked>
+          <label for="size-s">S</label>
+          <input type="radio" name="size" id="size-m" value="m">
+          <label for="size-m">M</label>
+          <input type="radio" name="size" id="size-l" value="l">
+          <label for="size-l">L</label>
+        </fieldset>
+        <button class="add-to-cart__button button" type="submit">Добавить</button>
+      </form>
+    </section>
+
+  </body>
+
+</html>
