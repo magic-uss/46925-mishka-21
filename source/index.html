@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
@@ -15,18 +16,18 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-nav">
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
           <li class="main-nav__item">
-            <a href="">Поиск по сайту</a>
+            <a class="main-nav__link" href="">Поиск по сайту</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Корзина: пока пуста</a>
+            <a class="main-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -39,11 +40,11 @@
       <section class="catalog-nav">
         <h2 class="visually-hidden">Разделы каталога товаров</h2>
         <ul class="catalog-nav__list">
-          <li>
-            <a href="">Предметы интерьера</a>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link catalog-nav__link--interior" href="">Предметы интерьера</a>
           </li>
-          <li>
-            <a href="">Детские игрушки</a>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link catalog-nav__link--toy" href="">Детские игрушки</a>
           </li>
         </ul>
       </section>
@@ -113,11 +114,11 @@
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__info">
           <dt>e-mail:</dt>
-          <dd><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dd><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt>адрес:</dt>
           <dd>г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
         </dl>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606130893994!5m2!1sru!2sru" width="320" height="455" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606130893994!5m2!1sru!2sru" width="320" height="455" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <a class="contacts__button button" href="">Напишите нам</a>
       </section>
 
@@ -144,15 +145,15 @@
     </footer>
 
     <section class="add-to-cart">
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
         <h3 class="add-to-cart__title">Добавить в корзину</h3>
         <span class="add-to-cart__text">Выберите размер:</span>
-        <input type="radio" name="size" id="size-s" value="s" checked>
-        <label for="size-s">S</label>
-        <input type="radio" name="size" id="size-m" value="m">
-        <label for="size-m">M</label>
-        <input type="radio" name="size" id="size-l" value="l">
-        <label for="size-l">L</label>
+        <input class="add-to-cart__input" type="radio" name="size" id="size-s" value="s" checked>
+        <label class="add-to-cart__label" for="size-s">S</label>
+        <input class="add-to-cart__input" type="radio" name="size" id="size-m" value="m">
+        <label class="add-to-cart__label" for="size-m">M</label>
+        <input class="add-to-cart__input" type="radio" name="size" id="size-l" value="l">
+        <label class="add-to-cart__label" for="size-l">L</label>
         <button class="add-to-cart__button button" type="submit">Добавить</button>
       </form>
     </section>
