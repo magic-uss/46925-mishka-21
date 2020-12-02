@@ -1,3 +1,25 @@
 .page-footer {
+  display: flex;
+  align-items: center;
+  min-height: 143px;
   background-color: @very-light-grey;
+}
+
+.page-footer__inner {
+  .container-mobile ();
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    .container ();
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
 }
