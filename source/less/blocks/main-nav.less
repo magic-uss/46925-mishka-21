@@ -1,10 +1,30 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .main-nav__list {
   .list ();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop) {
+    width: 50%;
+  }
 }
 
 .main-nav__link {
   display: block;
-  padding: 26px 76px;
+  padding: 26px 0;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
