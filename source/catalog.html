@@ -16,18 +16,18 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-nav">
           <li class="main-nav__item">
-            <a>Каталог товаров</a>
+            <a class="main-nav__link">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
           <li class="main-nav__item">
-            <a href="">Поиск по сайту</a>
+            <a class="main-nav__link" href="">Поиск по сайту</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Корзина: пока пуста</a>
+            <a class="main-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -109,15 +109,15 @@
     </footer>
 
     <section class="add-to-cart">
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
         <h3 class="add-to-cart__title">Добавить в корзину</h3>
         <span class="add-to-cart__text">Выберите размер:</span>
-        <input type="radio" name="size" id="size-s" value="s" checked>
-        <label for="size-s">S</label>
-        <input type="radio" name="size" id="size-m" value="m">
-        <label for="size-m">M</label>
-        <input type="radio" name="size" id="size-l" value="l">
-        <label for="size-l">L</label>
+        <input class="add-to-cart__input" type="radio" name="size" id="size-s" value="s" checked>
+        <label class="add-to-cart__label" for="size-s">S</label>
+        <input class="add-to-cart__input" type="radio" name="size" id="size-m" value="m">
+        <label class="add-to-cart__label" for="size-m">M</label>
+        <input class="add-to-cart__input" type="radio" name="size" id="size-l" value="l">
+        <label class="add-to-cart__label" for="size-l">L</label>
         <button class="add-to-cart__button button" type="submit">Добавить</button>
       </form>
     </section>
