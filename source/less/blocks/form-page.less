@@ -6,9 +6,8 @@
   }
 }
 
-.form-page__text {
+.form-page__text-wrapper {
   .container-mobile ();
-  font-size: 13px;
 
   @media (min-width: @tablet) {
     .container ();
@@ -16,6 +15,11 @@
 
   @media (min-width: @desktop) {
     width: calc((100% - 100px) / 6 * 4);
+    max-width: 700px;
     margin: 0 auto;
   }
+}
+
+.form-page__text {
+  font-size: 13px;
 }

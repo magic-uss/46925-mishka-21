@@ -1,23 +1,24 @@
-.form__section-wrapper {
+.form__section-background-wrapper {
   @media (min-width: @tablet) {
     background-color: @very-light-grey;
   }
 }
 
-.form__section {
+.form__section-wrapper {
   .container-mobile ();
-  margin: 0;
-  border: none;
 
   @media (min-width: @tablet) {
     .container ();
   }
 }
 
-.form__section-inner {
+.form__section {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
 
   @media (min-width: @tablet) {
     padding-left: calc(100% / 4);
