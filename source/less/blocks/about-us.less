@@ -1,5 +1,22 @@
+.about-us {
+  .container-mobile ();
+
+  @media (min-width: @tablet) {
+    .container ();
+  }
+}
+
 .about-us__list {
   .list ();
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 calc(100% / 6);
+  }
 }
 
 .about-us__title {
@@ -7,6 +24,10 @@
   font-size: 25px;
   line-height: 30px;
   color: @black;
+
+  @media (min-width: @desktop) {
+    padding: 0 calc(100% / 6);
+  }
 }
 
 .about-us__item {

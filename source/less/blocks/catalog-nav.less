@@ -1,5 +1,19 @@
 .catalog-nav__list {
   .list ();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    .container ();
+    flex-direction: row;
+    margin-top: -74px;
+  }
+}
+
+.catalog-nav__item {
+  @media (min-width: @tablet) {
+    width: 50%;
+  }
 }
 
 .catalog-nav__link {

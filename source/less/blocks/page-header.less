@@ -1,0 +1,25 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    .container ();
+    align-items: stretch;
+  }
+}
+
+.page-header__logo {
+  align-self: center;
+  display: block;
+  height: 35px;
+  padding: 22px 0;
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    left: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    left: 45%;
+  }
+}
