@@ -1,12 +1,21 @@
 .form-page__title {
-  padding: 75px 25px;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: @black;
-  background-color: @very-light-grey;
+  padding: 75px 30px;
+
+  @media (min-width: @tablet) {
+    padding: 75px 50px;
+  }
 }
 
 .form-page__text {
+  .container-mobile ();
   font-size: 13px;
+
+  @media (min-width: @tablet) {
+    .container ();
+  }
+
+  @media (min-width: @desktop) {
+    width: calc((100% - 100px) / 6 * 4);
+    margin: 0 auto;
+  }
 }

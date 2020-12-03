@@ -1,0 +1,43 @@
+.page-main {
+  @media (min-width: @tablet) {
+    margin-top: -63px;
+  }
+}
+
+.page-main__delivery-wrapper {
+  position: relative;
+
+  @media (min-width: @tablet) {
+    .container ();
+  }
+}
+
+.page-main__delivery {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
+}
+
+.page-main__title-wrapper {
+  background-color: @very-light-grey;
+}
+
+.page-main__title {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: @black;
+
+  @media (min-width: @tablet) {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}

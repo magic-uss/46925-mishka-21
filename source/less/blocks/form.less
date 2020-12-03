@@ -1,15 +1,75 @@
-.form__fieldset {
+.form__section-wrapper {
+  @media (min-width: @tablet) {
+    background-color: @very-light-grey;
+  }
+}
+
+.form__section {
+  .container-mobile ();
   margin: 0;
-  padding: 0;
   border: none;
+
+  @media (min-width: @tablet) {
+    .container ();
+  }
+}
+
+.form__section-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    padding-left: calc(100% / 4);
+
+    &--checkbox {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--name {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &--order {
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: calc(100% / 6);
+
+    &--checkbox {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--name,
+    &--contacts,
+    &--comment,
+    &--order {
+      padding-right: calc((100% - 100px) / 6);
+    }
+  }
 }
 
 .form__title {
+  display: block;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: @cyan-63;
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &[for="email"] {
+      top: 30px;
+    }
+  }
 }
 
 .form__label {
@@ -17,6 +77,10 @@
   font-size: 19px;
   line-height: 18px;
   color: @black;
+
+  @media (min-width: @tablet) {
+    margin-right: 10px;
+  }
 }
 
 .form__input-text {
@@ -24,32 +88,58 @@
   line-height: 18px;
   font-family: inherit;
   color: inherit;
-}
 
-.form__input-text::placeholder {
-  font-size: 19px;
-  line-height: 18px;
-  font-family: inherit;
-  color: @black;
-  opacity: 0.3;
+  &::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+    font-family: inherit;
+    color: @black;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet) {
+    flex-grow: 1;
+    min-width: 375px;
+  }
+
+  @media (min-width: @desktop) {
+    min-width: 573px;
+  }
 }
 
 .form__comment {
+  display: block;
   font-size: 19px;
   line-height: 18px;
   font-family: inherit;
   color: @black;
-}
 
-.form__comment::placeholder {
-  font-size: 19px;
-  line-height: 18px;
-  font-family: inherit;
-  color: @black;
-  opacity: 0.3;
+  &::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+    font-family: inherit;
+    color: @black;
+    opacity: 0.3;
+  }
 }
 
 .form__text {
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    right: calc((100% - 100px) / 6);
+  }
+}
+
+.form__button {
+  @media (min-width: @tablet) {
+    align-self: flex-start;
+  }
 }
