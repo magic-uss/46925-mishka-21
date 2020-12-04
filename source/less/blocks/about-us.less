@@ -11,7 +11,7 @@
 
   @media (min-width: @tablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: @desktop) {
@@ -36,4 +36,24 @@
   font-size: 17px;
   line-height: 20px;
   color: @black;
+}
+
+.about-us__item--money {
+  order: 2;
+}
+
+.about-us__item--heart {
+  order: 4;
+}
+
+.about-us__item--clew {
+  order: 1;
+}
+
+.about-us__item--rocket {
+  order: 3;
+}
+
+.about-us__item--gift {
+  order: 5;
 }
