@@ -5,3 +5,19 @@
     display: flex;
   }
 }
+
+.product-nav__item {
+  @media (min-width: @desktop) {
+    &:not(:last-child) {
+      margin-right: 62px;
+    }
+  }
+}
+
+.product-nav__link {
+  font-size: 15px;
+
+  @media (min-width: @desktop) {
+    padding: 20px 0 20px;
+  }
+}

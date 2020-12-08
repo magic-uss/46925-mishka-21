@@ -12,66 +12,190 @@
   @media (min-width: @tablet) {
     display: grid;
     grid-template-columns: 1fr calc(100% / 4);
+    margin-bottom: 38px;
   }
 
   @media (min-width: @desktop) {
     display: grid;
-    grid-template-columns: calc(100% / 4) 1fr;
+    grid-template-columns: calc(100% / 6) 1fr;
+    margin-bottom: 95px;
+    padding-top: 82px;
   }
 }
 
 .week-product__product-title {
+  margin-top: 31px;
+  margin-bottom: 3px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: @black;
+
+  @media (min-width: @tablet) {
+    margin-top: 67px;
+    margin-bottom: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    z-index: 1;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .week-product__title {
+  margin-top: 0;
+  margin-bottom: 18px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
   color: @cyan-63;
 
+  @media (min-width: @tablet) {
+    margin-top: 74px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    line-height: 17px;
+    text-align: center;
+  }
+
   @media (min-width: @desktop) {
     grid-column-start: 1;
     grid-row-start: 1;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+.week-product__title br {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: inline;
   }
 }
 
 .week-product__product-inner {
+  margin-bottom: 73px;
+
   @media (min-width: @tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 124px;
   }
 
   @media (min-width: @desktop) {
     grid-template-columns: calc(100% / 5 * 2) calc(100% / 5 * 3);
     margin-top: -60px;
+    margin-bottom: 163px;
     padding-left: calc(100% / 6);
   }
 }
 
 .week-product__product-description {
   margin: 0;
-  padding-top: 60px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 33px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.week-product__product-description br {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
 }
 
 .week-product__product-features {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  max-width: 260px;
+  margin: 0;
+  margin-bottom: 40px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 33px;
+  }
+}
+
+.week-product__product-term {
+  padding: 9px 0 10px;
+  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @desktop) {
+    padding: 8px 0 8px;
+  }
+}
+
+.week-product__product-definition {
+  margin: 0;
+  padding: 9px 0 10px 30px;
+  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @desktop) {
+    padding: 8px 0 8px 30px;
+  }
 }
 
 .week-product__product-image {
+  display: block;
+  width: 260px;
+  height: 315px;
+
   @media (min-width: @tablet) {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 5;
+    width: 334px;
+    height: 404px;
+    margin-top: 13px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 525px;
+    height: 636px;
+    margin-top: -152px;
   }
 }
 
 .week-product__product-price {
+  max-width: 260px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   font-weight: bold;
   font-size: 17px;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    margin-top: 23px;
+    margin-bottom: 27px;
+    padding-left: 14px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 83px;
+  }
+}
+
+.week-product__product-order {
+  display: block;
+
+  @media (min-width: @tablet) {
+    min-width: 292px;
+    padding-bottom: 9px;
+  }
 }

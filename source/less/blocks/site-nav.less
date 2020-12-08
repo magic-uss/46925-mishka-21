@@ -3,3 +3,29 @@
     align-self: flex-start;
   }
 }
+
+.site-nav__item {
+  @media (min-width: @tablet) {
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &:not(:last-child) {
+      border-right: 1px solid @black-1;
+    }
+  }
+}
+
+.site-nav__link {
+  @media (min-width: @tablet) {
+    padding: 21px 0 20px;
+    font-size: 15px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 32px 35px 32px 0;
+    font-size: 17px;
+  }
+}

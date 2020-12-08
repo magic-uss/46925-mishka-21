@@ -7,3 +7,21 @@
     justify-content: flex-end;
   }
 }
+
+.user-nav__link {
+  @media (min-width: @tablet) {
+    padding: 32px 0 32px;
+
+    &--search {
+      width: 83px;
+      height: 88px;
+      box-sizing: border-box;
+      border-left: 1px solid @black-1;
+      border-right: 1px solid @black-1;
+    }
+
+    &--cart {
+      padding-left: 84px;
+    }
+  }
+}

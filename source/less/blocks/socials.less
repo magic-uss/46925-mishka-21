@@ -1,5 +1,24 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
 .socials__list {
   .list ();
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  max-width: 260px;
+
+  @media (min-width: @tablet) {
+    justify-content: space-between;
+    width: 141px;
+  }
+}
+
+.socials__link {
+  display: block;
 }

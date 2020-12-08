@@ -12,18 +12,47 @@
   }
 }
 
-.page-header__logo {
-  align-self: center;
-  display: block;
-  height: 35px;
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   padding: 22px 0;
+  box-shadow: 0 1px 0 @light-grey,
+    inset 0 1px 0 @light-grey;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+.page-header__logo-link {
+  display: block;
 
   @media (min-width: @tablet) {
     position: absolute;
+    top: 22px;
     left: 50px;
   }
 
   @media (min-width: @desktop) {
-    left: 45%;
+    top: 9px;
+    left: calc(50% - 75px);
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: @tablet) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 149px;
+    height: 72px;
   }
 }

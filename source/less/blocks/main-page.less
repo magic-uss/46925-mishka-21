@@ -1,11 +1,18 @@
 .main-page__title-wrapper {
-  background: url("../../img/bg-main.jpg") 0 0 no-repeat;
+  min-height: 283px;
+  background: url("../../img/bg-main.jpg") center -17px no-repeat;
 }
 
 .main-page__title {
-  padding: 85px 30px;
+  padding: 72px 30px;
 
   @media (min-width: @tablet) {
-    padding: 85px 50px;
+    min-height: 700px;
+    padding: 154px 53px 154px 47px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 158px;
   }
 }

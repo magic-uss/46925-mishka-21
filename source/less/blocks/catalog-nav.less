@@ -17,17 +17,50 @@
 }
 
 .catalog-nav__link {
+  position: relative;
   display: block;
-  padding: 25px 30px;
+  height: 103px;
+  padding: 24px 30px 31px;
+  box-sizing: border-box;
   font-weight: bold;
   font-size: 19px;
   color: @white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    height: 108px;
+    margin-top: -5px;
+  }
+
+  @media (min-width: @tablet) {
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .catalog-nav__link--interior {
   background-color: @cyan-63;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: @cyan-59;
+  }
 }
 
 .catalog-nav__link--toy {
   background-color: @cyan-56;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: @cyan-46;
+  }
+}
+
+.catalog-nav__title {
+  display: block;
+  width: 50%;
 }
