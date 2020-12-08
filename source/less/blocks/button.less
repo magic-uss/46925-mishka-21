@@ -1,11 +1,30 @@
 .button {
-  padding: 12px 53px;
+  width: 260px;
+  padding: 14px 20px;
   box-sizing: border-box;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: inherit;
   background-color: transparent;
   border: 2px solid @dark-grey;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background: linear-gradient(0deg, @dark-grey, @dark-grey);
+    border: 2px solid @dark-grey;
+  }
+
+  &:active {
+    color: @white-3;
+    background: linear-gradient(0deg, @dark-grey, @dark-grey);
+    border: 2px solid @dark-grey;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 14px 20px 14px;
+  }
 }

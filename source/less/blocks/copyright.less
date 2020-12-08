@@ -1,6 +1,20 @@
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
   color: @black;
+  border-top: 1px solid @lighter-grey;
+
+  @media (min-width: @tablet) {
+    padding-bottom: 8px;
+    border: none;
+  }
+}
+
+.copyright__text {
+  margin-right: 27px;
 }
