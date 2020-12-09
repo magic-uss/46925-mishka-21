@@ -54,7 +54,7 @@
 
 .contacts__info {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: max-content 1fr;
   grid-row-gap: 30px;
   grid-column-gap: 33px;
   margin: 0;
@@ -62,13 +62,13 @@
   line-height: 30px;
 
   @media (min-width: @tablet) {
-    grid-template-columns: min-content 1fr min-content 1fr;
+    grid-template-columns: max-content 1fr max-content 1fr;
     grid-column-gap: 0;
     font-size: 17px;
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: max-content 1fr;
     padding-right: 20px;
     padding-left: calc(100% / 3);
   }
@@ -118,12 +118,11 @@
 }
 
 .contacts__button {
-  margin: 0 30px;
+  margin: 0 auto;
   display: block;
 
   @media (min-width: @tablet) {
     width: 230px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop) {
