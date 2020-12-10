@@ -1,8 +1,12 @@
 .form-page__title {
-  padding: 75px 30px;
+  padding: 73px 30px;
 
   @media (min-width: @tablet) {
-    padding: 75px 50px;
+    padding: 100px 50px 76px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 95px;
   }
 }
 
@@ -21,5 +25,19 @@
 }
 
 .form-page__text {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-top: 18px;
   font-size: 13px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 14px;
+    padding-top: 65px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 118px;
+  }
 }
