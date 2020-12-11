@@ -59,6 +59,7 @@
     }
 
     &--contacts {
+      padding-top: 61px;
       padding-bottom: 15px;
     }
 
@@ -161,8 +162,28 @@
   }
 }
 
+.form__input-radio:disabled + .form__label--radio,
+.form__input-radio:disabled + .form__label--radio::before,
+.form__input-radio:disabled + .form__label--radio::after {
+  opacity: 0.5;
+}
+
+
+.form__input-radio:disabled + .form__label--radio:hover::before {
+  border-color: @dark-grey;
+}
+
 .form__input-checkbox:focus + .form__label--checkbox::before {
   border-color: @cyan-62;
+}
+
+.form__input-checkbox:disabled + .form__label--checkbox,
+.form__input-checkbox:disabled + .form__label--checkbox::before {
+  opacity: 0.5;
+}
+
+.form__input-checkbox:disabled + .form__label--checkbox:hover::before {
+  border-color: @dark-grey;
 }
 
 .form__label {
@@ -296,7 +317,7 @@
   @media (min-width: @tablet) {
     align-self: flex-start;
     padding-top: 0;
-    padding-left: 18px;
+    padding-left: 17px;
 
     &::placeholder {
       font-size: 19px;
@@ -305,21 +326,9 @@
 
     &--contacts {
       width: 100%;
-      padding-top: 66px;
+      padding-top: 5px;
       background-color: transparent;
-
-      &[type="email"] {
-        padding-top: 5px;
-      }
     }
-  }
-
-  @media (min-width: 860px) {
-    min-width: 440px;
-  }
-
-  @media (min-width: @desktop) {
-    min-width: 573px;
   }
 }
 
@@ -387,12 +396,12 @@
 
 @media (max-width: @mobile-only) {
   .form__section {
-    &--radio::after,
-    &--checkbox::after,
-    &--name::after {
+    &--radio::before,
+    &--checkbox::before,
+    &--name::before {
       content: "";
       position: absolute;
-      top: -8px;
+      top: 0;
       right: 0;
       width: calc(100% - 60px);
       height: 1px;
