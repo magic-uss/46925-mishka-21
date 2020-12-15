@@ -13,7 +13,11 @@
     <header class="page-header">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" alt="Логотип интернет-магазина «Мишка»." width="86" height="35">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-header-mobile.svg" alt="Логотип интернет-магазина «Мишка»." width="86" height="35">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -53,7 +57,7 @@
         <span class="page-main__delivery">Бесплатная доставка по России</span>
       </div>
 
-      <div class="main-page__title-wrapper page-main__title-wrapper">
+      <div class="main-page__title-wrapper">
 
         <h1 class="main-page__title page-main__title">Милые штуки ручной<br>работы для дома</h1>
 
@@ -90,7 +94,13 @@
             <dt class="week-product__product-term">Высота:</dt>
             <dd class="week-product__product-definition">15 см</dd>
           </dl>
-          <img class="week-product__product-image" src="https://via.placeholder.com/260x315" alt="Три корзинки разного размера и цвета в женских руках." width="260" height="315">
+          <div class="week-product__product-image-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/week-product-desktop.jpg 1x, img/week-product-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/week-product-tablet.jpg 1x, img/week-product-tablet@2x.jpg 2x">
+              <img class="week-product__product-image" src="img/week-product-mobile.jpg" srcset="img/week-product-mobile.jpg 1x, img/week-product-mobile@2x.jpg 2x" alt="Три корзинки разного размера и цвета в женских руках." width="260" height="315">
+            </picture>
+          </div>
           <p class="week-product__product-price">Цена: 990 руб.</p>
           <a class="week-product__product-order button" href="product-order.html">Заказать</a>
         </div>
