@@ -1,5 +1,19 @@
 .form-page__title-wrapper {
+  position: relative;
   background-color: @very-light-grey;
+
+  @media (min-width: @tablet) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 24px;
+      background: url("../../img/zigzag-bg-tablet.svg") 0 0 repeat;
+    }
+  }
 }
 
 .form-page__title {

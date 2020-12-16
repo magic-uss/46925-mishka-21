@@ -395,23 +395,10 @@
 }
 
 @media (max-width: @mobile-only) {
-  .form__section {
-    &--radio::before,
-    &--checkbox::before,
-    &--name::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: calc(100% - 60px);
-      height: 1px;
-      background-color: @cyan-62;
-    }
-  }
-
   .form__title {
-    &--contacts::after,
-    &--comment::after {
+    width: 100%;
+
+    &::after {
       content: "";
       position: absolute;
       top: 7px;
