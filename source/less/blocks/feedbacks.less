@@ -6,19 +6,53 @@
   }
 }
 
+.feedbacks__inner {
+  @media (min-width: @desktop) {
+    .container ();
+  }
+}
+
 .feedbacks__slider-wrapper {
   .container-mobile ();
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: url("../../img/zigzag-mobile.svg") 0 0 repeat;
+  }
 
   @media (min-width: @tablet) {
     .container ();
     padding-top: 82px;
     padding-bottom: 20px;
+    background: url("../../img/review-tablet.png") 0 0 no-repeat;
+
+    &::before {
+      bottom: -80px;
+      height: 17px;
+      background-image: url("../../img/zigzag-tablet.svg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review-tablet@2x.png");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: @desktop) {
-    padding-top: 78px;
-    padding-bottom: 64px;
+    margin: 0;
+    padding: 78px 0 64px;
+
+    &::before {
+      bottom: -92px;
+      height: 23px;
+      background-image: url("../../img/zigzag-desktop.svg");
+    }
   }
 }
 
@@ -116,6 +150,7 @@
   }
 
   @media (min-width: @desktop) {
+    right: 19px;
     bottom: 94px;
   }
 }
@@ -141,5 +176,9 @@
     top: 79px;
     width: 175px;
     margin: 0;
+  }
+
+  @media (min-width: @desktop) {
+    right: 0;
   }
 }

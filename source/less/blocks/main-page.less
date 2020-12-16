@@ -1,6 +1,21 @@
 .main-page__title-wrapper {
   min-height: 283px;
-  background: url("../../img/bg-main.jpg") center -17px no-repeat;
+  background: @bg-grey url("../../img/bg-main-mobile.jpg") center -17px no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bg-main-mobile@2x.jpg");
+    background-size: 569px auto;
+  }
+
+  @media (min-width: @tablet) {
+    min-height: 746px;
+    background: @bg-grey url("../../img/bg-main-tablet.jpg") center 0 no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-main-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
 }
 
 .main-page__title {
