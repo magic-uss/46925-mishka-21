@@ -74,6 +74,7 @@
 }
 
 .main-nav__item {
+  display: flex;
   box-shadow: 0 1px 0 @light-grey,
     inset 0 1px 0 @light-grey;
 
@@ -84,7 +85,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 28px 0 27px 24vw;
+  padding: 28px 10px 27px 22px;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
@@ -118,5 +119,12 @@
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (max-width: @mobile-only) {
+  .main-nav__link {
+    min-width: 182px;
+    margin: 0 auto;
   }
 }
