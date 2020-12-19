@@ -73,3 +73,39 @@
   display: block;
   width: 50%;
 }
+
+.catalog-nav__icon {
+  position: absolute;
+  fill: @dark-cyan;
+  fill-opacity: 0.5;
+
+  &--interior {
+    top: 24px;
+    right: 36px;
+  }
+
+  &--toy {
+    top: 22px;
+    right: 27px;
+  }
+
+  @media (min-width: @tablet) {
+    &--interior {
+      top: 30px;
+    }
+
+    &--toy {
+      top: 32px;
+      right: 34px;
+    }
+  }
+}
+
+.catalog-nav__link:hover .catalog-nav__icon,
+.catalog-nav__link:focus .catalog-nav__icon {
+  fill-opacity: 0.7;
+}
+
+.catalog-nav__link:active .catalog-nav__icon {
+  fill-opacity: 0.3;
+}

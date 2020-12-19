@@ -66,3 +66,33 @@
     height: 72px;
   }
 }
+
+.page-header__logo-background-with-decoration,
+.page-header__logo-decoration,
+.page-header__logo-letters-desktop {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+  }
+}
+
+.page-header__logo-background,
+.page-header__logo-letters-tablet {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
+}
+
+.page-header__logo-letters-mobile,
+.page-header__logo-underline {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
