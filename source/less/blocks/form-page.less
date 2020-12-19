@@ -14,6 +14,14 @@
       background: url("../../img/zigzag-bg-tablet.svg") 0 0 repeat;
     }
   }
+
+  @media (min-width: @desktop) {
+    &::before {
+      bottom: -17px;
+      background-image: url("../../img/zigzag-bg-desktop.svg");
+      height: 34px;
+    }
+  }
 }
 
 .form-page__title {
