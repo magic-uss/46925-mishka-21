@@ -30,6 +30,10 @@
     padding: 28px 0 13px;
   }
 
+  &--contacts {
+    position: relative;
+  }
+
   &--comment {
     margin-bottom: 16px;
   }
@@ -154,6 +158,7 @@
   box-sizing: border-box;
   border: 8px solid @cyan-62;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: @tablet) {
     top: -1px;
@@ -175,6 +180,24 @@
 
 .form__input-checkbox:focus + .form__label--checkbox::before {
   border-color: @cyan-62;
+}
+
+.form__input-checkbox:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 24px;
+  height: 17px;
+  background: url("../../img/checkbox-icon.svg") 0 0 no-repeat;
+  cursor: pointer;
+
+  @media (min-width: @tablet) {
+    left: 10px;
+    width: 32px;
+    height: 22px;
+    background-size: 100% auto;
+  }
 }
 
 .form__input-checkbox:disabled + .form__label--checkbox,
@@ -203,6 +226,7 @@
     box-sizing: border-box;
     border: 2px solid @dark-grey;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   &--radio:hover::before {
@@ -222,6 +246,7 @@
     height: 38px;
     box-sizing: border-box;
     border: 2px solid @dark-grey;
+    cursor: pointer;
   }
 
   &--checkbox:hover::before {
@@ -412,4 +437,52 @@
       width: calc(100% - 78px);
     }
   }
+}
+
+.form__contacts-icon {
+  position: absolute;
+  fill: @black;
+  fill-opacity: 0.2;
+
+  &--phone {
+    top: 30px;
+    right: 8px;
+    width: 25px;
+    height: 24px;
+  }
+
+  &--mail {
+    top: 143px;
+    right: 3px;
+    width: 32px;
+    height: 21px;
+  }
+
+  @media (min-width: @tablet) {
+    &--phone {
+      top: 60px;
+      right: 25px;
+    }
+
+    &--mail {
+      right: 21px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &--phone {
+      right: calc(100% / 6 + 8px);
+    }
+
+    &--mail {
+      right: calc(100% / 6 + 4px);
+    }
+  }
+}
+
+.form__input-text--contacts:hover + .form__contacts-icon,
+.form__input-text--contacts:focus + .form__contacts-icon,
+.form__input-text--contacts:active + .form__contacts-icon {
+  fill: @cyan-62;
+  fill-opacity: 1;
 }
