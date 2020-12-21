@@ -2,7 +2,7 @@ const navBlock = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 const modalPopup = document.querySelector('.add-to-cart');
-const orderBtn = document.querySelector('.week-product__product-order');
+const orderBtn = document.querySelector('.order-js');
 
 /* nav show/close */
 
