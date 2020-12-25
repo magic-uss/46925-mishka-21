@@ -22,6 +22,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -41,7 +42,7 @@ const images = () => {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo(),
     ]))
     .pipe(gulp.dest("build/img"));
 }
@@ -100,7 +101,8 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
-    "source/sprites.svg"
+    "source/sprites.svg",
+    "source/favicon.png"
   ],
     {
       base: "source"
@@ -137,7 +139,7 @@ exports.server = server;
 
 // Reload
 
-const reload = done => {
+const reload = (done) => {
   sync.reload();
   done();
 }

@@ -2,7 +2,7 @@ const navBlock = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 const modalPopup = document.querySelector('.add-to-cart');
-const orderBtn = document.querySelector('.order-js');
+const orderBtn = document.querySelectorAll('.order-js');
 
 /* nav show/close */
 
@@ -20,10 +20,12 @@ navToggle.addEventListener('click', function() {
 
 /* modal show/close */
 
-orderBtn.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  modalPopup.classList.add('add-to-cart--show');
-});
+for (var i=0; i<orderBtn.length; i++) {
+  orderBtn[i].addEventListener('click', function(evt) {
+    evt.preventDefault();
+    modalPopup.classList.add('add-to-cart--show');
+  })
+};
 
 window.addEventListener('keydown', function(evt) {
   if (evt.key === 'Escape') {
