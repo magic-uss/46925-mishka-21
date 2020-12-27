@@ -54,7 +54,7 @@
     left: 0;
     width: 21px;
     height: 20px;
-    background: url("../../img/menu-close.svg") 0 0 no-repeat;
+    background: url("../img/menu-close.svg") 0 0 no-repeat;
   }
 }
 
@@ -90,21 +90,35 @@
   font-size: 17px;
   text-decoration: none;
   color: @black;
+}
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
+.main-nav__link-title {
+  @media (min-width: @tablet) {
+    &--search {
+      position: absolute;
+      opacity: 0;
+    }
   }
 }
 
-.main-nav__search-title {
+.main-nav__link:hover .main-nav__link-title,
+.main-nav__link:focus .main-nav__link-title {
+  opacity: 0.6;
+
   @media (min-width: @tablet) {
-    position: absolute;
-    opacity: 0;
+    &--search {
+      opacity: 0;
+    }
+  }
+}
+
+.main-nav__link:active .main-nav__link-title {
+  opacity: 0.3;
+
+  @media (min-width: @tablet) {
+    &--search {
+      opacity: 0;
+    }
   }
 }
 

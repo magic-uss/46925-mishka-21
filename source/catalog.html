@@ -27,10 +27,14 @@
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-nav">
           <li class="main-nav__item site-nav__item">
-            <a class="main-nav__link site-nav__link">Каталог товаров</a>
+            <a class="main-nav__link site-nav__link">
+              <span class="main-nav__link-title">Каталог товаров</span>
+            </a>
           </li>
           <li class="main-nav__item site-nav__item">
-            <a class="main-nav__link site-nav__link" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link site-nav__link" href="form.html">
+              <span class="main-nav__link-title">Вязание на заказ</span>
+            </a>
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
@@ -39,7 +43,7 @@
               <svg class="user-nav__icon" width="18" height="18" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprites.svg#search-icon"></use>
               </svg>
-              <span class="main-nav__search-title">Поиск по сайту</span>
+              <span class="main-nav__link-title main-nav__link-title--search">Поиск по сайту</span>
             </a>
           </li>
           <li class="main-nav__item user-nav__item  user-nav__item--cart">
@@ -47,16 +51,20 @@
               <svg class="user-nav__icon" width="21" height="18" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprites.svg#cart-icon"></use>
               </svg>
-              Корзина: пока пуста
+              <span class="main-nav__link-title">Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
         <ul class="main-nav__list product-nav">
           <li class="main-nav__item product-nav__item">
-            <a class="main-nav__link product-nav__link" href="">Новые поступления</a>
+            <a class="main-nav__link product-nav__link" href="">
+              <span class="main-nav__link-title">Новые поступления</span>
+            </a>
           </li>
           <li class="main-nav__item product-nav__item">
-            <a class="main-nav__link product-nav__link" href="">Распродажа</a>
+            <a class="main-nav__link product-nav__link" href="">
+              <span class="main-nav__link-title">Распродажа</span>
+            </a>
           </li>
         </ul>
       </nav>
