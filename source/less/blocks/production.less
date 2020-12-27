@@ -16,14 +16,23 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 668px;
+  }
 
   @media (min-width: @desktop) {
     flex-direction: row;
+    width: auto;
+    margin: 0;
   }
 }
 
 .production__inner {
   padding-top: 21px;
+  box-sizing: border-box;
   border: 1px solid @light-grey;
 
   &:hover,
@@ -136,10 +145,22 @@
   position: absolute;
   top: calc(100% / 2 - 39px);
   left: calc(100% / 2 - 50px);
+  width: 101px;
+  height: 77px;
   padding: 0;
-  background-color: transparent;
+  background: transparent url("../../img/play-icon.svg") 0 0 no-repeat;
   border: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__text {
@@ -176,14 +197,4 @@
     width: 230px;
     margin: 0;
   }
-}
-
-.production__video-button:hover .production__play-icon,
-.production__video-button:focus .production__play-icon {
-  transform: scale(1.2);
-}
-
-.production__video-button:active .production__play-icon {
-  transform: scale(0.8);
-  opacity: 0.3;
 }

@@ -23,7 +23,7 @@
     margin: 0;
     margin-bottom: 95px;
     padding: 0;
-    padding-top: 82px;
+    padding-top: 79px;
   }
 }
 
@@ -69,6 +69,7 @@
   @media (min-width: @desktop) {
     grid-column-start: 1;
     grid-row-start: 1;
+    margin-top: 61px;
     padding-left: 0;
     padding-right: 10px;
   }
@@ -104,7 +105,7 @@
     margin-bottom: 124px;
 
     &::before {
-      bottom: -70px;
+      bottom: -68px;
       height: 17px;
       background-image: url("../../img/zigzag-tablet.svg");
     }
@@ -117,7 +118,7 @@
     padding-left: calc(100% / 6);
 
     &::before {
-      bottom: -92px;
+      bottom: -96px;
       height: 23px;
       background-image: url("../../img/zigzag-desktop.svg");
     }
@@ -126,10 +127,10 @@
 
 .week-product__product-description {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet) {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
     padding-right: 40px;
     font-size: 17px;
     line-height: 30px;
@@ -143,32 +144,46 @@
 .week-product__product-features {
   display: grid;
   grid-template-columns: max-content 1fr;
-  max-width: 260px;
-  margin: 0 auto 30px;
+  width: 260px;
+  margin: 0 auto 28px;
   line-height: 20px;
 
   @media (min-width: @tablet) {
-    margin: 0;
-    margin-bottom: 33px;
+    width: 292px;
+    margin: 0 0 33px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 109px;
+    padding-top: 4px;
   }
 }
 
 .week-product__product-term {
-  padding: 9px 0 10px;
+  padding: 7px 0 12px;
   border-bottom: 1px solid @light-grey;
 
+  @media (min-width: @tablet) {
+    padding: 7px 0 10px;
+  }
+
   @media (min-width: @desktop) {
-    padding: 8px 0 8px;
+    padding: 4px 0 13px;
   }
 }
 
 .week-product__product-definition {
   margin: 0;
-  padding: 9px 0 10px 30px;
+  padding: 7px 0 12px 30px;
   border-bottom: 1px solid @light-grey;
 
+  @media (min-width: @tablet) {
+    padding: 7px 0 10px 30px;
+  }
+
   @media (min-width: @desktop) {
-    padding: 8px 0 8px 30px;
+    padding: 4px 0 13px 30px;
   }
 }
 
@@ -214,7 +229,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-top: 83px;
+    margin-top: 0;
   }
 }
 

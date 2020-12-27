@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
   </head>
 
   <body class="page__body">
@@ -23,7 +23,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs"> <!--Класс main-nav--nojs переключает состояние меню на js-->
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-nav">
           <li class="main-nav__item site-nav__item">
@@ -37,7 +37,7 @@
           <li class="main-nav__item user-nav__item user-nav__item--search">
             <a class="main-nav__link user-nav__link user-nav__link--search" href="">
               <svg class="user-nav__icon" width="18" height="18" aria-hidden="true" focusable="false">
-                <use xlink:href="sprites.svg#search-icon"></use>
+                <use xlink:href="img/sprites.svg#search-icon"></use>
               </svg>
               <span class="main-nav__search-title">Поиск по сайту</span>
             </a>
@@ -45,7 +45,7 @@
           <li class="main-nav__item user-nav__item  user-nav__item--cart">
             <a class="main-nav__link user-nav__link user-nav__link--cart" href="">
               <svg class="user-nav__icon" width="21" height="18" aria-hidden="true" focusable="false">
-                <use xlink:href="sprites.svg#cart-icon"></use>
+                <use xlink:href="img/sprites.svg#cart-icon"></use>
               </svg>
               Корзина: пока пуста
             </a>
@@ -97,7 +97,7 @@
                 <span class="product-catalog__product-price">1 200 руб.</span>
                 <a class="product-catalog__product-order order-js" href="product-order.html" aria-label="Заказать">
                   <svg class="product-catalog__cart-icon" width="21" height="18" aria-hidden="true" focusable="false">
-                    <use xlink:href="sprites.svg#cart-icon"></use>
+                    <use xlink:href="img/sprites.svg#cart-icon"></use>
                   </svg>
                 </a>
               </div>
@@ -123,7 +123,7 @@
                 <span class="product-catalog__product-price">690 руб.</span>
                 <a class="product-catalog__product-order order-js" href="product-order.html" aria-label="Заказать">
                   <svg class="product-catalog__cart-icon" width="21" height="18" aria-hidden="true" focusable="false">
-                    <use xlink:href="sprites.svg#cart-icon"></use>
+                    <use xlink:href="img/sprites.svg#cart-icon"></use>
                   </svg>
                 </a>
               </div>
@@ -149,7 +149,7 @@
                 <span class="product-catalog__product-price">1 500 руб.</span>
                 <a class="product-catalog__product-order order-js" href="product-order.html" aria-label="Заказать">
                   <svg class="product-catalog__cart-icon" width="21" height="18" aria-hidden="true" focusable="false">
-                    <use xlink:href="sprites.svg#cart-icon"></use>
+                    <use xlink:href="img/sprites.svg#cart-icon"></use>
                   </svg>
                 </a>
               </div>
@@ -169,11 +169,7 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="production__video-image" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x" alt="Вязаная корзинка, верхняя половина бирюзового цвета, нижняя серого цвета." width="260" height="150">
             </picture>
-            <button class="production__video-button" type="button" aria-label="Смотреть">
-              <svg class="production__play-icon" width="101" height="77" aria-hidden="true" focusable="false">
-                <use xlink:href="sprites.svg#play-icon"></use>
-              </svg>
-            </button>
+            <button class="production__video-button" type="button" aria-label="Смотреть"></button>
           </div>
           <div class="production__inner">
             <div class="production__title-wrapper">
@@ -191,7 +187,7 @@
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__logo-image" width="102" height="34" role="img" aria-label="Логотип интернет-магазина «Мишка».">
-            <use xlink:href="sprites.svg#logo-footer-icon"></use>
+            <use xlink:href="img/sprites.svg#logo-footer-icon"></use>
           </svg>
         </a>
         <div class="socials">
@@ -199,21 +195,21 @@
             <li class="socials__item">
               <a class="socials__link" href="" aria-label="Инстаграм">
                 <svg width="22" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="sprites.svg#instagram-icon"></use>
+                  <use xlink:href="img/sprites.svg#instagram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="" aria-label="Фейсбук">
                 <svg width="15" height="28" aria-hidden="true" focusable="false">
-                  <use xlink:href="sprites.svg#facebook-icon"></use>
+                  <use xlink:href="img/sprites.svg#facebook-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="" aria-label="Твиттер">
                 <svg width="23" height="20" aria-hidden="true" focusable="false">
-                  <use xlink:href="sprites.svg#twitter-icon"></use>
+                  <use xlink:href="img/sprites.svg#twitter-icon"></use>
                 </svg>
               </a>
             </li>
@@ -223,7 +219,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <svg width="27" height="35" aria-hidden="true" focusable="false">
-              <use xlink:href="sprites.svg#htmlacademy-icon"></use>
+              <use xlink:href="img/sprites.svg#htmlacademy-icon"></use>
             </svg>
           </a>
         </div>

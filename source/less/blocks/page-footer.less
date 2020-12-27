@@ -9,14 +9,17 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet) {
-    .container ();
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 143px;
+    padding: 0 50px 5px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
+    max-width: 1050px;
+    margin: 0 auto;
     padding: 0;
   }
 }
@@ -37,6 +40,10 @@
 
   @media (min-width: @tablet) {
     display: block;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 6px;
   }
 }
 

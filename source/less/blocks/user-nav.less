@@ -9,9 +9,11 @@
 }
 
 .user-nav__item {
-  &--search {
-    border-left: 1px solid @black-1;
-    border-right: 1px solid @black-1;
+  @media (min-width: @tablet) {
+    &--search {
+      border-left: 1px solid @black-1;
+      border-right: 1px solid @black-1;
+    }
   }
 }
 
@@ -22,14 +24,18 @@
     padding: 32px 0 32px;
 
     &--search {
-      width: 83px;
+      width: 82px;
       height: 88px;
       box-sizing: border-box;
     }
 
     &--cart {
-      padding-left: 84px;
+      padding-left: 83px;
     }
+  }
+
+  @media (min-width: @desktop) {
+    padding-right: 2px;
   }
 }
 

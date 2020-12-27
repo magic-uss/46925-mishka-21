@@ -58,13 +58,13 @@
     }
 
     &--name {
-      padding-top: 66px;
-      padding-bottom: 10px;
+      padding-top: 62px;
+      padding-bottom: 14px;
     }
 
     &--contacts {
-      padding-top: 61px;
-      padding-bottom: 15px;
+      padding-top: 55px;
+      padding-bottom: 21px;
     }
 
     &--comment {
@@ -85,6 +85,10 @@
 
     &--checkbox {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--radio {
+      padding-bottom: 65px;
     }
 
     &--name,
@@ -119,7 +123,7 @@
 
   @media (min-width: @tablet) {
     position: absolute;
-    top: 66px;
+    top: 68px;
     left: 0;
 
     &[for="email"] {
@@ -304,7 +308,14 @@
     }
 
     &--name {
-      margin-bottom: 58px;
+      margin-bottom: 54px;
+      padding-top: 4px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &--checkbox::before {
+      top: -18px;
     }
   }
 }
@@ -312,18 +323,16 @@
 .form__input-text {
   width: 100%;
   margin-bottom: 22px;
-  padding: 11px 0 12px;
+  padding: 9px 0 14px;
   box-sizing: border-box;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 1;
   font-family: inherit;
   color: inherit;
   border: none;
   box-shadow: inset 0 -2px 0 @black;
 
   &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
     font-family: inherit;
     color: @black;
     opacity: 0.3;
@@ -343,15 +352,13 @@
     align-self: flex-start;
     padding-top: 0;
     padding-left: 17px;
-
-    &::placeholder {
-      font-size: 19px;
-      line-height: 18px;
-    }
+    font-size: 19px;
 
     &--contacts {
       width: 100%;
+      margin-bottom: 29px;
       padding-top: 5px;
+      padding-bottom: 16px;
       background-color: transparent;
     }
   }
